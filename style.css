@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root  {
+    --titles: 'Playfair Display';
+    --texts: 'EB Garamond';
+    --textcolor: #0e1535;
+    --foreground: #1d2a6d;
+    --background: #fff;
+    --highlights: #ffd000;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    overflow-x: hidden !important;
+}
+
+h1, h2, h3  {
+    font-family: var(--titles);
+}
+
+p  {
+    font-family: var(--texts);
+}
+
+#navbar  {
+    background: var(--background);
+    border-bottom: 5px solid var(--foreground);
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 5px 20px;
+}
+
+#navbar #links  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#banner-container  {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    z-index: 0;
+    margin-right: -20px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#banner-container #image-container  {
+    width: 50vw;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: 100ms linear;
+    z-index: 1;
+}
+
+#banner-container #back  {
+    background-color: var(--highlights);
+    z-index: 2;
+    width: 60vw;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    margin-left: -75px;
+}
+
+#banner-container #front  {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 2% 100%);
+    background-color: var(--foreground);
+    height: 100%;
+    padding-left: 95px !important;
+    padding: 12px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#banner-container #front h1  {
+    font-family: var(--titles);
+    font-weight: 800;
+    color: var(--highlights);
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#banner-container #front p  {
+    font-family: var(--texts);
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#banner-container #front a  {
+    font-family: var(--texts);
+    font-weight: 400;
+    color: var(--highlights);
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid var(--highlights);
+    padding: 12px 32px;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+#banner-container #front a:hover  {
+    background-color: var(--highlights);
+    color: var(--textcolor);
+}
+
+#info  {
+    background: var(--background);
+    color: var(--textcolor);
+    font-size: 20px;
+    font-family: var(--texts);
+    padding: 50px;
+}
+
+.group  {
+    display: flex;
+    height: 25vh;
+}
+
+.group .subject  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--texts);
+    color: var(--textcolor);
+    font-size: 20px;
+    background-size: cover !important;
+    background-position: center !important;
+    border: 2px var(--foreground) solid;
+}
+
+#group3 .subject  {
+    width: 25%;
+    background: red;
+}
+
+#group4 .subject  {
+    width: calc(100% / 3);
+    background: turquoise;
+}
+
+#group5 .subject  {
+    width: 100%;
+    background: forestgreen;
+}
+
+#schools, #students  {
+    padding: 50px;
+    color: var(--textcolor)
+}
+
+#schools h2, #students h2  {
+    padding-bottom: 20px;
+}
+
+#students  {
+    padding-top: 0;
+}
+
+footer  {
+    background-color: var(--foreground);
+    border-top: 5px solid var(--highlights);
+    height: 10vh;
+    color: #fff;
+    font-family: var(--texts);
+}

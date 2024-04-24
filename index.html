@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home &vert; The International Douglas-Young Tournament</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="navbar">
+        <img src="imgs/favicon.ico" alt="logo">
+        <div id="links">
+            <a href="./index.html">Home</a>
+        </div>
+    </div>
+    <div id="banner-container">
+        <div id="image-container"></div>
+        <div id="back">
+            <div id="front">
+                <h1>The International <br>Douglas-Young Tournament</h1>
+                <p>The world's first IB tournament</p>
+                <a href="#info">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <p id="info">The International Douglas-Young Tournament is an annual tournament run by IB students and made for IB students. Our goal is for our participants to connect with students around the world while engaging in a fruitful academic competition. <br>The tournament is centred around three categories: <span style="background-color: red;">Group 3</span>, <span style="background-color: turquoise;">Group 4</span>, and <span style="background-color: forestgreen;">Group 5</span>. <br>Subjects we offer for this year’s edition include:</p>
+    <div id="subject-container">
+        <div id="group3" class="group">
+            <div class="subject" id="subject1">Economics</div>
+            <div class="subject" id="subject2">Business Management</div>
+            <div class="subject" id="subject3">History</div>
+            <div class="subject" id="subject4">Psychology</div>
+        </div>
+        <div id="group4" class="group">
+            <div class="subject" id="subject5">Biology</div>
+            <div class="subject" id="subject6">Chemistry</div>
+            <div class="subject" id="subject7">Physics</div>
+        </div>
+        <div id="group5" class="group">
+            <div class="subject" id="subject8">Mathematics</div>
+        </div>
+    </div>
+
+    <div id="schools">
+        <h2>Why should you join as a school?</h2>
+        <p>The International Douglas-Young Tournament (IDYT) is designed to be a low-cost, accessible, and simple way for all IB schools to connect to celebrate their students’ academic success. Every school that enters is guaranteed a spot in the final round, which will be held in Denmark, as well as a certificate of participation. The winning school is also awarded the “Leading International Douglas-Young Tournament Institution” title which is awarded in the form of a grand trophy.</p>
+    </div>
+
+    <div id="students">
+        <h2>Why should you join as a student?</h2>
+        <p>Students are the main focus of the International Douglas-Young Tournament (DYT). The competition is designed to not only be academically rewarding but also to be socially enriching. Students can expect to build lasting relationships with other students around the world and enjoy their stay at the tournament’s venue. Students can join the process in one of two ways: as a participant or as their school’s student ambassador.
+<br><br>
+            The student ambassador role is a prestigious leadership position where students complete many tasks such as marketing the competition, communicating with organisers and their school administration, adapting the tournament details to their unique school, and many more. The student ambassador role is also a CAS project for the designated student in charge and student ambassadors are automatically invited to the second round, prize-giving ceremony, and post-tournament celebration which will be held in Denmark. Student ambassadors also have the potential to earn the “Best Student Ambassador” award. Student ambassador positions are available to any IB or Pre-IB student who proves themselves to be charismatic, ambitious, and capable of problem-solving.
+            <br><br>
+            As a participant, students will compete against each other in two separate rounds which will test their knowledge, research, organising, and communication abilities in their chosen subject. Students are allowed to choose one subject to specialise in which additionally does not have to be one they study – although recommended. Participant roles are open to any Pre-IB or IB student and are an amazing source of creativity CAS. The tournament rounds are designed to be challenging, competitive, and fast to complete to not take time away from students’ studies. We will award a total of 43 prizes to 43 different participants. There will be a first, second, third, fourth, and fifth prize for each subject as well as three separate prizes for three different categories: best speaker, most creative, and best handwriting. Prizes will range from gift cards to international trips and all participants are guaranteed a certificate of completion. Regardless of the prizes, being a participant in the competition is an incredible experience that you do not want to miss!
+            
+            </p>
+    </div>
+
+    <footer>
+        footer content
+    </footer>
+
+    <script>
+        var banner = document.getElementById("image-container");
+        var current = 1;
+        switchImage();
+        setInterval(switchImage, 5000);
+        function switchImage()  {
+            if (current != 4)  {
+                current++;
+            } else  {
+                current = 1;
+            }
+
+            banner.style.background = 'url(imgs/banner' + current + '.png)';
+        }
+    </script>
+</body>
+</html>
