@@ -47,6 +47,17 @@ p  {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 30vw;
+    text-decoration: none;
+}
+
+#links a  {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+#links a:hover  {
+    color: var(--highlights);
 }
 
 #banner-container  {
@@ -213,4 +224,11 @@ footer  {
     height: 10vh;
     color: #fff;
     font-family: var(--texts);
+    display: flex;
+    align-items: center;
+    padding: 12px 32px;
+}
+
+footer p  {
+    font-size: 16px;
 }
