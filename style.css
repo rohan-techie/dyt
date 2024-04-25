@@ -54,6 +54,7 @@ p  {
 #links a  {
     text-decoration: none;
     color: var(--textcolor);
+    transition: 200ms;
 }
 
 #links a:hover  {
