@@ -87,6 +87,7 @@ p  {
     width: 60vw;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
     margin-left: -10%;
+    margin-left: -10%;
 }
 
 #banner-container #front  {
@@ -158,6 +159,7 @@ p  {
     align-items: center;
     font-family: var(--texts);
     color: var(--textcolor);
+    font-size: 24px;
     font-size: 24px;
     background-size: cover !important;
     background-position: center !important;
