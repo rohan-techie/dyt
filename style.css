@@ -55,6 +55,8 @@ p  {
     text-decoration: none;
     color: var(--textcolor);
     transition: 200ms;
+    font-family: var(--texts);
+    font-weight: 500;
 }
 
 #links a:hover  {
