@@ -22,10 +22,14 @@ body  {
 
 h1, h2, h3  {
     font-family: var(--titles);
+    text-align: center;
+    font-size: 28px;
+    color: var(--textcolor);
 }
 
 p  {
     font-family: var(--texts);
+    font-size: 22px;
 }
 
 #navbar  {
@@ -51,6 +55,7 @@ p  {
     margin-right: -20px;
     width: 100vw;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 #banner-container #image-container  {
@@ -66,7 +71,7 @@ p  {
     z-index: 2;
     width: 60vw;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
-    margin-left: -75px;
+    margin-left: -10%;
 }
 
 #banner-container #front  {
@@ -120,14 +125,16 @@ p  {
 #info  {
     background: var(--background);
     color: var(--textcolor);
-    font-size: 20px;
     font-family: var(--texts);
     padding: 50px;
+    padding-top: 20px;
 }
 
 .group  {
     display: flex;
-    height: 25vh;
+    height: 15vh;
+    width: 80vw;
+    margin-left: 10vw;
 }
 
 .group .subject  {
@@ -136,7 +143,7 @@ p  {
     align-items: center;
     font-family: var(--texts);
     color: var(--textcolor);
-    font-size: 20px;
+    font-size: 24px;
     background-size: cover !important;
     background-position: center !important;
     border: 2px var(--foreground) solid;
@@ -144,17 +151,17 @@ p  {
 
 #group3 .subject  {
     width: 25%;
-    background: red;
+    background: #ff753f;
 }
 
 #group4 .subject  {
     width: calc(100% / 3);
-    background: turquoise;
+    background: #c8f0ff;
 }
 
 #group5 .subject  {
     width: 100%;
-    background: forestgreen;
+    background: #5dd15d;
 }
 
 #schools, #students  {
