@@ -4,9 +4,9 @@
 :root  {
     --titles: 'Playfair Display';
     --texts: 'EB Garamond';
-    --textcolor: #0e1535;
+    --textcolor: #090d21;
     --foreground: #1d2a6d;
-    --background: #fff;
+    --background: #e3e3e3;
     --highlights: #ffd000;
 }
 
@@ -18,14 +18,20 @@
 
 body  {
     overflow-x: hidden !important;
+    width: 100vw !important;
+    background: var(--background);
 }
 
 h1, h2, h3  {
     font-family: var(--titles);
+    text-align: center;
+    font-size: 30px;
+    color: var(--foreground);
 }
 
 p  {
     font-family: var(--texts);
+    font-size: 22px;
 }
 
 #navbar  {
@@ -51,6 +57,8 @@ p  {
     margin-right: -20px;
     width: 100vw;
     overflow: hidden;
+    margin-bottom: 50px;
+    border-bottom: 2px solid var(--highlights);
 }
 
 #banner-container #image-container  {
@@ -66,7 +74,7 @@ p  {
     z-index: 2;
     width: 60vw;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
-    margin-left: -75px;
+    margin-left: -10%;
 }
 
 #banner-container #front  {
@@ -120,14 +128,16 @@ p  {
 #info  {
     background: var(--background);
     color: var(--textcolor);
-    font-size: 20px;
     font-family: var(--texts);
-    padding: 50px;
+    padding: 50px 100px;
+    padding-top: 20px;
 }
 
 .group  {
     display: flex;
-    height: 25vh;
+    height: 15vh;
+    width: 50vw;
+    margin-left: 25vw;
 }
 
 .group .subject  {
@@ -136,29 +146,54 @@ p  {
     align-items: center;
     font-family: var(--texts);
     color: var(--textcolor);
-    font-size: 20px;
+    font-size: 24px;
     background-size: cover !important;
     background-position: center !important;
     border: 2px var(--foreground) solid;
+    font-weight: 600;
+    padding: 12px 32px;
 }
 
 #group3 .subject  {
     width: 25%;
-    background: red;
+    background: #f5c855;
 }
 
 #group4 .subject  {
     width: calc(100% / 3);
-    background: turquoise;
+    background: #5574bd;
 }
 
 #group5 .subject  {
     width: 100%;
-    background: forestgreen;
+    background: #d65339;
+}
+
+#stats  {
+    margin-top: 50px;
+    padding: 50px;
+    background: var(--foreground);
+    color: var(--background);
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 3px solid var(--highlights);
+    border-bottom: 3px solid var(--highlights);
+}
+
+.stat  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stat span  {
+    color: var(--highlights);
+    font-size: 30px;
+
 }
 
 #schools, #students  {
-    padding: 50px;
+    padding: 50px 100px;
     color: var(--textcolor)
 }
 
@@ -166,8 +201,10 @@ p  {
     padding-bottom: 20px;
 }
 
-#students  {
-    padding-top: 0;
+hr  {
+    border: 2px solid var(--highlights);
+    width: 400px;
+    margin-left: calc((100vw - 400px) / 2);
 }
 
 footer  {
