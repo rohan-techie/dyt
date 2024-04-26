@@ -63,6 +63,10 @@ p  {
     color: var(--highlights);
 }
 
+#bars  {
+    display: none;
+}
+
 #banner-container  {
     width: 100vw;
     height: 90vh;
@@ -148,11 +152,50 @@ p  {
     padding-top: 20px;
 }
 
-.group  {
+#subject-container  {
     display: flex;
+    flex-direction: column;
+}
+
+#tabs  {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25vw;
+    width: 50vw;
+}
+
+.tab  {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    width: calc(100% / 3);
+    border: 2px solid var(--textcolor);
+    cursor: pointer;
+}
+
+#tab1  {
+    background: #f5c855;
+}
+
+#tab2  {
+    background: #5574bd;
+}
+
+#tab3  {
+    background: #d65339;
+}
+
+.group  {
+    display: none;
     height: 15vh;
     width: 50vw;
     margin-left: 25vw;
+}
+
+.group.active  {
+    display: flex;
 }
 
 .group .subject  {

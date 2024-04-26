@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root  {
+    --titles: 'Playfair Display';
+    --texts: 'EB Garamond';
+    --textcolor: #090d21;
+    --foreground: #1d2a6d;
+    --background: #e3e3e3;
+    --highlights: #ffd000;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    overflow-x: hidden !important;
+    width: 100vw !important;
+    background: var(--background);
+}
+
+h1, h2, h3  {
+    font-family: var(--titles);
+    text-align: center;
+    font-size: 30px;
+    color: var(--foreground);
+}
+
+p  {
+    font-family: var(--texts);
+    font-size: 22px;
+}
+
+#navbar  {
+    background: var(--background);
+    border-bottom: 5px solid var(--foreground);
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 5px 20px;
+}
+
+#links a  {
+    text-decoration: none;
+    color: var(--textcolor);
+    transition: 200ms;
+    font-family: var(--texts);
+    font-weight: 500;
+    display: none;
+}
+
+#links a:hover  {
+    color: var(--highlights);
+}
+
+#bars  {
+    display: block;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10vw;
+    justify-content: space-evenly;
+}
+
+#bar  {
+    height: 3px;
+    background: black;
+    width: 100%;
+}

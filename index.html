@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home &vert; The International Douglas-Young Tournament</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen and (min-width: 500px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 500px)">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -13,6 +14,10 @@
         <div id="links">
             <a href="./index.html">Home</a>
         </div>
+        <div id="bars">
+            <div id="bar"></div>
+            <div id="bar"></div>
+        </div>
     </div>
     <div id="banner-container">
         <div id="image-container"></div>
@@ -20,7 +25,7 @@
             <div id="front">
                 <h1>The International <br>Douglas-Young Tournament</h1>
                 <p>The world's first IB tournament</p>
-                <a href="#info">Read more</a>
+                <a href="#info-heading">Read more</a>
             </div>
         </div>
     </div>
@@ -28,6 +33,11 @@
     <h2 id="info-heading">What is it?</h2>
     <p id="info">The International Douglas-Young Tournament is an annual tournament run by IB students and made for IB students. Our goal is for our participants to connect with students around the world while engaging in a fruitful academic competition. <br>The tournament is centred around three categories: <span style="color: #f5c855;">Group 3</span>, <span style="color: #5574bd;">Group 4</span>, and <span style="color: #d65339;">Group 5</span>. <br>Subjects we offer for this year’s edition include:</p>
     <div id="subject-container">
+        <div id="tabs">
+            <div id="tab1" class="tab" onclick="makeActive(this.dataset.group)" data-group="group3">Group 3</div>
+            <div id="tab2" class="tab" onclick="makeActive(this.dataset.group)" data-group="group4">Group 4</div>
+            <div id="tab3" class="tab" onclick="makeActive(this.dataset.group)" data-group="group5">Group 5</div>
+        </div>
         <div id="group3" class="group">
             <div class="subject" id="subject1">Economics</div>
             <div class="subject" id="subject2">Business Management</div>
@@ -55,7 +65,6 @@
 
     <div id="schools">
         <h2>Why should you join as a school?</h2>
-        <p>The International Douglas-Young Tournament (DYT) is designed to be a low-cost, accessible, and simple way for all IB schools to connect to celebrate their students’ academic success. Every school that enters is guaranteed a spot in the final round, which will be held in Denmark, as well as a certificate of participation. The winning school is also awarded the “Leading International Douglas-Young Tournament Institution” title which is awarded in the form of a grand trophy.</p>
         <p>The International Douglas-Young Tournament (DYT) is designed to be a low-cost, accessible, and simple way for all IB schools to connect to celebrate their students’ academic success. Every school that enters is guaranteed a spot in the final round, which will be held in Denmark, as well as a certificate of participation. The winning school is also awarded the “Leading International Douglas-Young Tournament Institution” title which is awarded in the form of a grand trophy.</p>
     </div>
     <hr>
@@ -92,6 +101,18 @@
         document.onload = () =>  {
             var schoolStat = document.querySelector("")
         };
+
+        function makeActive(el)  {
+            var arr = ['group3', 'group4', 'group5'];
+            for (let i of arr)  {
+                var element = document.getElementById(i);
+                if (i != el)  {
+                    element.classList.remove('active');
+                } else  {
+                    element.classList.add('active');
+                }
+            }
+        }
     </script>
 </body>
 </html>
